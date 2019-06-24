@@ -1,9 +1,12 @@
+# [Teamogy Numeral](http://teamogy.com/)
+
+Fork from [Numeral.js](http://numeraljs.com/) library.
+
 # [Numeral.js](http://numeraljs.com/)
 
 A javascript library for formatting and manipulating numbers.
 
 [Website and documentation](http://numeraljs.com/)
-
 
 # Travis Build Status
 
@@ -21,7 +24,7 @@ Develop [![Build Status](https://travis-ci.org/adamwdraper/Numeral-js.svg?branch
 
 # Contributing
 
-#### Important: Please create your branch from and submit pull requests to the `develop` branch.  All pull requests must include the appropriate tests.
+#### Important: Please create your branch from and submit pull requests to the `develop` branch. All pull requests must include the appropriate tests.
 
 1. Fork the library
 
@@ -39,11 +42,9 @@ Develop [![Build Status](https://travis-ci.org/adamwdraper/Numeral-js.svg?branch
 
 8. Submit a pull request to the `develop` branch.
 
-
 ### Formats
 
 Formats now exist in their own files and act more or less as plugins. Check out the [bytes format](https://github.com/adamwdraper/Numeral-js/blob/master/src/formats/bytes.js) for an example of how to create one.
-
 
 ### Locales
 
@@ -52,7 +53,6 @@ When naming locale files use the [ISO 639-1 language codes](http://en.wikipedia.
 ### Locale translations will not be merged without unit tests.
 
 See [the english unit tests](https://github.com/adamwdraper/Numeral-js/blob/master/tests/locales/en-gb.js) for an example.
-
 
 # Changelog
 
@@ -84,7 +84,7 @@ Bug fix: Fixed regression for webpack/browserify/rollup
 
 2.0.0 brings a lot of breaking changes and a reorganization of the repo, but also simplifies the api as well as the creating of custom formats.
 
-Breaking change / Feature: All formats are now separate files.  This makes it easy to create custom formats, and will also allow for custom builds with only certain formats.  (Note: The built numeral.js still contains all formats in the repo).
+Breaking change / Feature: All formats are now separate files. This makes it easy to create custom formats, and will also allow for custom builds with only certain formats. (Note: The built numeral.js still contains all formats in the repo).
 
 Breaking change / Feature: All formats and locales are now loaded using `numeral.register(type, name, {})`
 
@@ -94,7 +94,7 @@ Breaking change: The `locale` function no longer loads locales, it only sets the
 
 Breaking change: The `unformat` function has been removed `numeral().unformat(string)` and now happens on numeral init `numeral(string)`
 
-Breaking change / Feature: Bytes are now formatted as: `b` (base 1000)  and `ib` (base 1024)
+Breaking change / Feature: Bytes are now formatted as: `b` (base 1000) and `ib` (base 1024)
 
 Breaking change: `numeral(NaN)` is now treated the same as `numeral(null)` and no longer throws an error
 
@@ -218,7 +218,7 @@ Bug fix: Minor fix to unformatting parser
 
 ### 1.3.0
 
-Add support for spaces before/after $, a, o, b in a format string
+Add support for spaces before/after \$, a, o, b in a format string
 
 Bug fix: Fix unformat for languages that use '.' in ordinals
 
@@ -282,11 +282,9 @@ Added abbreviations for thousands and millions using 'a' in the format
 
 Initial release
 
-
 # Acknowlegements
 
 Numeral.js, while less complex, was inspired by and heavily borrowed from [Moment.js](http://momentjs.com)
-
 
 # License
 
